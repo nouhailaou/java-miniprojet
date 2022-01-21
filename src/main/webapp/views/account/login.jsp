@@ -288,7 +288,7 @@
         <!-- Icon -->
 
         <!-- Login Form -->
-        <form class="form" method="POST" action="/mini-projet/auth/login">
+        <form class="form" method="POST" action="/auth/login">
             <c:if test="${error!=null}">
                 <span class="text-danger">${error}</span>
             </c:if>

@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -30,7 +30,7 @@
                 <h3 class="card-title">Profile Information</h3>
             </div>
             <!-- /.card-header -->
-            <form id="insert-item" action="/mini-projet/admin/profile" method="post">
+            <form id="insert-item" action="/admin/profile" method="post">
                      <c:if test="${error!=null}">
                 		<span class="text-danger">${error}</span>
             		</c:if>

@@ -70,12 +70,12 @@ public class AdminServlet extends HttpServlet {
         HttpSession session = request.getSession();
         Object uid = session.getAttribute("uid");
         if(uid==null){
-            response.sendRedirect("/mini-projet/auth/login");
+            response.sendRedirect("/auth/login");
             return;
         }
         Long id = Long.parseLong(String.valueOf(uid));
         User account = accountService.findOne(id);
-        
+
         if (account != null) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/admin/profile.jsp");
             session.setAttribute("username", account.getUsername());
@@ -94,7 +94,7 @@ public class AdminServlet extends HttpServlet {
         HttpSession session = request.getSession();
         Object uid = session.getAttribute("uid");
         if(uid==null){
-            response.sendRedirect("/mini-projet/auth/login");
+            response.sendRedirect("/auth/login");
             return;
         }
         Long id = Long.parseLong(String.valueOf(uid));
@@ -106,7 +106,7 @@ public class AdminServlet extends HttpServlet {
         User account = new User(id, username, pass,fname,lname,phone);
 
         boolean result = accountService.update(account);
-        
+
         if (result) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/admin/profile.jsp");
             request.setAttribute("account", account);

@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -31,7 +31,7 @@
                         <h3 class="card-title">List des Salles</h3>
                         <div class="card-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
-                                <a href="/mini-projet/salle/new" class="btn btn-info"> Add</a>
+                                <a href="/salle/new" class="btn btn-info"> Add</a>
                             </div>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
                                 <th>Actions</th>
                             </tr>
                             </thead>
-                            <tbody id="table-body">      
-                                               
+                            <tbody id="table-body">
+
                             </tbody>
                         </table>
                     </div>
@@ -74,7 +74,7 @@
                         <td>${x.code}</td>
                         <td>${x.type}</td>
                         <td>
-                            <a href="/mini-projet/salle/edit?id=${x.id}" class="btn btn-info btn-flat">Edit</a>
+                            <a href="/salle/edit?id=${x.id}" class="btn btn-info btn-flat">Edit</a>
                             <button  data-id="${x.id}" class="delete-item btn btn-danger btn-flat"> Delete </button>
                         </td>
                     </tr>
@@ -88,7 +88,7 @@
                         const id = $(this).data("id")
                         $.ajax({
                             method: "POST",
-                            url: 'http://localhost:8080/mini-projet/salle/api/delete?id='+id,
+                            url: 'http://localhost:8080/salle/api/delete?id='+id,
                             dataType: 'json',
                             success: function (data) {
                                 alert("salle with id "+id+" deleted")
@@ -107,7 +107,7 @@
         function getData(){
             $.ajax({
                 method: "GET",
-                url: 'http://localhost:8080/mini-projet/salle/api/',
+                url: 'http://localhost:8080/salle/api/',
                 dataType: 'json',
                 success: function (data) {
                     console.log({data})

@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -29,7 +29,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-center">
                         <div class="card-tools w-75 text-center">
-                            <form action="/mini-projet/machine/date" method="post">
+                            <form action="/machine/date" method="post">
                                 <div class="form-group">
                                     <label for="dateD">Date Debut</label>
                                     <input type="date" class="form-control" value="${dateD}" name="dateD" id="dateD">
@@ -94,7 +94,7 @@
                         <td>${x.dateAchat}</td>
                         <td>${x.salleId}</td>
                         <td>
-                            <a href="/mini-projet/machine/edit?id=${x.id}" class="btn btn-info btn-flat">Edit</a>
+                            <a href="/machine/edit?id=${x.id}" class="btn btn-info btn-flat">Edit</a>
                             <button  data-id="${x.id}" class="delete-item btn btn-danger btn-flat"> Delete </button>
                         </td>
                     </tr>
@@ -108,7 +108,7 @@
                         const id = $(this).data("id")
                         $.ajax({
                             method: "POST",
-                            url: 'http://localhost:8080/mini-projet/machine/api/delete?id='+id,
+                            url: 'http://localhost:8080/machine/api/delete?id='+id,
                             dataType: 'json',
                             success: function (data) {
                                 alert("machine with id "+id+" deleted")
@@ -128,7 +128,7 @@
         function getData(){
             $.ajax({
                 method: "GET",
-                url: 'http://localhost:8080/mini-projet/machine/api/',
+                url: 'http://localhost:8080/machine/api/',
                 dataType: 'json',
                 success: function (data) {
                     console.log({data})

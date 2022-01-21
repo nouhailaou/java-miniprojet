@@ -9,14 +9,14 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <c:if test="${sessionScope.uid == null}">
 <script>
-    window.location.href="/mini-projet/auth/login"
+    window.location.href="/auth/login"
 </script>
 </c:if>
 
 <div class="wrapper">
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="/mini-projet/resources/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="/resources/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -29,7 +29,7 @@
         <ul class="navbar-nav ml-auto">
             <!-- Navbar Search -->
             <li class="nav-item">
-                <a class="nav-link" href="/mini-projet/auth/logout" ><i class="fas fa-sign-out-alt"></i></a>
+                <a class="nav-link" href="/auth/logout" ><i class="fas fa-sign-out-alt"></i></a>
             </li>
         </ul>
     </nav>

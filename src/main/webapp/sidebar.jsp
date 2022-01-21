@@ -10,10 +10,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="/mini-projet/resources/dist/img/noha-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                <img src="/resources/dist/img/noha-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="/mini-projet/admin/profile" class="d-block">${sessionScope.fullname}</a>
+                <a href="/admin/profile" class="d-block">${sessionScope.fullname}</a>
             </div>
         </div>
 
@@ -23,7 +23,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="/mini-projet/dashboard" class="nav-link active">
+                    <a href="/dashboard" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -42,12 +42,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/mini-projet/salle/list" class="nav-link">
+                            <a href="/salle/list" class="nav-link">
                                 <p>List</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/mini-projet/salle/new" class="nav-link">
+                            <a href="/salle/new" class="nav-link">
                                 <p>Add</p>
                             </a>
                         </li>
@@ -63,22 +63,22 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/mini-projet/machine/list" class="nav-link">
+                            <a href="/machine/list" class="nav-link">
                                 <p>List</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/mini-projet/machine/new" class="nav-link">
+                            <a href="/machine/new" class="nav-link">
                                 <p>Add</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/mini-projet/machine/salle" class="nav-link">
+                            <a href="/machine/salle" class="nav-link">
                                 <p>Search par Salle</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/mini-projet/machine/date" class="nav-link">
+                            <a href="/machine/date" class="nav-link">
                                 <p>Search par date</p>
                             </a>
                         </li>

@@ -48,7 +48,7 @@
 
         $.ajax({
             method: "GET",
-            url: 'http://localhost:8180/mini-projet/salle/json',
+            url: 'http://localhost:8180/salle/json',
             dataType: 'json',
             success: function (data) {
                 console.log({data})

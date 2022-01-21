@@ -55,10 +55,10 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/mini-projet/salle/new" class="text-white">Add</a>
+              <a href="/salle/new" class="text-white">Add</a>
             </li>
             <li>
-              <a href="/mini-projet/salle/list" class="text-white">List</a>
+              <a href="/salle/list" class="text-white">List</a>
             </li>
           </ul>
         </div>
@@ -70,16 +70,16 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/mini-projet/machine/new" class="text-white">Add</a>
+              <a href="/machine/new" class="text-white">Add</a>
             </li>
             <li>
-              <a href="/mini-projet/machine/list" class="text-white">List</a>
+              <a href="/machine/list" class="text-white">List</a>
             </li>
             <li>
-              <a href="/mini-projet/machine/date" class="text-white">Search by date</a>
+              <a href="/machine/date" class="text-white">Search by date</a>
             </li>
             <li>
-              <a href="/mini-projet/machine/salle" class="text-white">Search by Salle</a>
+              <a href="/machine/salle" class="text-white">Search by Salle</a>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/mini-projet/dashboard" class="text-white">Machine By Salle Chart</a>
+              <a href="/dashboard" class="text-white">Machine By Salle Chart</a>
             </li>
           </ul>
         </div>
@@ -103,7 +103,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/mini-projet/admin/profile" class="text-white">Profile</a>
+              <a href="/admin/profile" class="text-white">Profile</a>
             </li>
           </ul>
         </div>
@@ -117,7 +117,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
+    ï¿½ 2022 Copyright:
     <a class="text-white" href="#">NOUHAILA OUAHBANI</a>
   </div>
   <!-- Copyright -->

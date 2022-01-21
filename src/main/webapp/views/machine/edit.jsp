@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -75,7 +75,7 @@
         if(params.id){
             $.ajax({
                 type: "GET",
-                url: "http://localhost:8080/mini-projet/machine/api/get?id="+params.id,
+                url: "http://localhost:8080/machine/api/get?id="+params.id,
                 success: function(data) {
                     console.log({machineOne:data})
                     $('input[name=reference]').val(data.reference);
@@ -98,7 +98,7 @@
             console.log({datata:form.serialize()})
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/mini-projet/machine/api/update?id="+params.id,
+                url: "http://localhost:8080/machine/api/update?id="+params.id,
                 data:form.serialize(),
                 success: function(data) {
                     console.log({updateResult:data})

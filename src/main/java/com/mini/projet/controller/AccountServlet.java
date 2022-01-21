@@ -85,7 +85,7 @@ public class AccountServlet extends HttpServlet {
             session.setAttribute("username", account.getUsername());
             session.setAttribute("fullname", account.getFullname());
 
-            response.sendRedirect("/mini-projet/dashboard/");
+            response.sendRedirect("/dashboard/");
         }else{
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/account/login.jsp");
             request.setAttribute("error", "User Not Found");
@@ -96,7 +96,7 @@ public class AccountServlet extends HttpServlet {
     private void doLogout(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
         HttpSession session=request.getSession();
         session.invalidate();
-        response.sendRedirect("/mini-projet/auth/login");
+        response.sendRedirect("/auth/login");
     }
 
 }

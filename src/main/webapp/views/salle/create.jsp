@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -66,7 +66,7 @@
             // var formData = new FormData(document.getElementById('insert-item')[0]);// yourForm: form selector
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/mini-projet/salle/api/add",
+                url: "http://localhost:8080/salle/api/add",
                 data: form.serialize(), // serializes the form's elements.
                 success: function(data) {
                     alert("salle Added");

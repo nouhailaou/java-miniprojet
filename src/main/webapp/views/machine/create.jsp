@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -76,7 +76,7 @@
             console.log({datata:form.serialize()})
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/mini-projet/machine/api/add",
+                url: "http://localhost:8080/machine/api/add",
                 data: form.serialize(), // serializes the form's elements.
                 success: function(data) {
                     alert("Machine Added");

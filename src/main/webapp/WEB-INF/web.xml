@@ -4,7 +4,6 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-<absolute-ordering />
   <context-param>
     <param-name>jdbcURL</param-name>
     <param-value>jdbc:mysql://r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/a2nvis6rc4x67mkm</param-value>

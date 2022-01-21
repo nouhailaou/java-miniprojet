@@ -4,8 +4,8 @@
 
 <c:import url="/global_styles.jsp"></c:import>
 <!-- jsGrid -->
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid.min.css">
-<link rel="stylesheet" href="/mini-projet/resources/plugins/jsgrid/jsgrid-theme.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid.min.css">
+<link rel="stylesheet" href="/resources/plugins/jsgrid/jsgrid-theme.min.css">
 <c:import url="/header.jsp"></c:import>
 
 <!-- Content Wrapper. Contains page content -->
@@ -95,7 +95,7 @@
                      gridLines: {
                          color: "rgb(210,210,211)"
                      },
-                     
+
                      ticks: {
                          // max: 100,
                          min: 0,
@@ -116,7 +116,7 @@
 
       $.ajax({
                 method: "GET",
-                url: 'http://localhost:8080/mini-projet/dashboard/getData',
+                url: 'http://localhost:8080/dashboard/getData',
                 dataType: 'json',
                 success: function (data) {
                     console.log({data})
