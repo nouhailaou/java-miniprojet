@@ -4,17 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+<absolute-ordering />
   <context-param>
     <param-name>jdbcURL</param-name>
-    <param-value>jdbc:mysql://localhost:3306/miniprojet?createDatabaseIfNotExist=true</param-value>
+    <param-value>jdbc:mysql://r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/a2nvis6rc4x67mkm</param-value>
   </context-param>
   <context-param>
     <param-name>jdbcUsername</param-name>
-    <param-value>root</param-value>
+    <param-value>qrnsppnw6fdss42v</param-value>
   </context-param>
   <context-param>
     <param-name>jdbcPassword</param-name>
-    <param-value></param-value>
+    <param-value>d6cpouf9fjc9nsqv</param-value>
   </context-param>
   <servlet>
     <servlet-name>SalleServlet</servlet-name>
