@@ -61,7 +61,7 @@
         if(params.id){
             $.ajax({
                 type: "GET",
-                url: "http://localhost:8080/salle/api/get?id="+params.id,
+                url: "https://mini-projet-java.herokuapp.com/salle/api/get?id="+params.id,
                 success: function(data) {
                     console.log({salleOne:data})
                     $('input[name=code]').val(data.code);
@@ -81,7 +81,7 @@
             console.log({datata:form.serialize()})
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/salle/api/update?id="+params.id,
+                url: "https://mini-projet-java.herokuapp.com/salle/api/update?id="+params.id,
                 data:form.serialize(),
                 success: function(data) {
                     console.log({updateResult:data})

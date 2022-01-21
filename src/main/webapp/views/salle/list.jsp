@@ -88,7 +88,7 @@
                         const id = $(this).data("id")
                         $.ajax({
                             method: "POST",
-                            url: 'http://localhost:8080/salle/api/delete?id='+id,
+                            url: 'https://mini-projet-java.herokuapp.com/salle/api/delete?id='+id,
                             dataType: 'json',
                             success: function (data) {
                                 alert("salle with id "+id+" deleted")
@@ -107,7 +107,7 @@
         function getData(){
             $.ajax({
                 method: "GET",
-                url: 'http://localhost:8080/salle/api/',
+                url: 'https://mini-projet-java.herokuapp.com/salle/api/',
                 dataType: 'json',
                 success: function (data) {
                     console.log({data})

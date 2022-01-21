@@ -75,7 +75,7 @@
         if(params.id){
             $.ajax({
                 type: "GET",
-                url: "http://localhost:8080/machine/api/get?id="+params.id,
+                url: "https://mini-projet-java.herokuapp.com/machine/api/get?id="+params.id,
                 success: function(data) {
                     console.log({machineOne:data})
                     $('input[name=reference]').val(data.reference);
@@ -98,7 +98,7 @@
             console.log({datata:form.serialize()})
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/machine/api/update?id="+params.id,
+                url: "https://mini-projet-java.herokuapp.com/machine/api/update?id="+params.id,
                 data:form.serialize(),
                 success: function(data) {
                     console.log({updateResult:data})

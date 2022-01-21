@@ -76,7 +76,7 @@
             console.log({datata:form.serialize()})
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/machine/api/add",
+                url: "https://mini-projet-java.herokuapp.com/machine/api/add",
                 data: form.serialize(), // serializes the form's elements.
                 success: function(data) {
                     alert("Machine Added");

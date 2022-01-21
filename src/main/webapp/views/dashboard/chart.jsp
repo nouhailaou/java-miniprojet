@@ -116,7 +116,7 @@
 
       $.ajax({
                 method: "GET",
-                url: 'http://localhost:8080/dashboard/getData',
+                url: 'https://mini-projet-java.herokuapp.com/dashboard/getData',
                 dataType: 'json',
                 success: function (data) {
                     console.log({data})

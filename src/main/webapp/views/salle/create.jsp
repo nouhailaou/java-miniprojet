@@ -66,7 +66,7 @@
             // var formData = new FormData(document.getElementById('insert-item')[0]);// yourForm: form selector
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8080/salle/api/add",
+                url: "https://mini-projet-java.herokuapp.com/salle/api/add",
                 data: form.serialize(), // serializes the form's elements.
                 success: function(data) {
                     alert("salle Added");
